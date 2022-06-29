@@ -77,3 +77,25 @@ arr = np.array([-1, -2, 1, 2, 3, -4])
 
 new_arr = np.absolute(arr)
 print(new_arr)
+
+# Other examples;
+new_arr += 3
+print(new_arr)
+
+# Multiply matrix
+a = np.array([[2, 2, 3], [2, 1, 4]])
+b = np.ones((3, 2))
+c = np.matmul(a, b)
+print(c)
+
+# Finding the determinant
+d = np.linalg.det(c)
+print(d)
+
+# Statistic
+a = np.array(([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]))
+b = np.max(a, axis=1).sum()  # 15
+print(np.min(a))
+print(np.max(a))
+print(np.mean(a))
+

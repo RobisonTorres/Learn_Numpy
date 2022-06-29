@@ -19,3 +19,8 @@ print(arr[0:2, 2])  # Output - [3 8]
 a = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
 a[:, 2] = 20  # Change in both arrays.
 print(a)
+
+# Example
+a = np.array(([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]))
+b = np.max(a, axis=1).sum()  # 5 + 10
+print(b)

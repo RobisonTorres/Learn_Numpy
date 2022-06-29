@@ -34,3 +34,10 @@ print(new_arr4)
 arr5 = np.array([[1, 2, 3], [4, 5, 6]])
 new_arr5 = arr5.reshape(-1)
 print(new_arr5)
+
+# Reorganizing arrays
+v1 = np.array([1, 2, 3, 4])
+v2 = np.array([5, 6, 7, 8])
+
+reo = np.vstack([v1, v2])  # vstack or hstack
+print(reo)
